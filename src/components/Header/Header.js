@@ -1,11 +1,16 @@
-import React, {useState} from "react";
+import React from "react";
 import "./Header.css";
 
 const Header = () => {
 
     return (
         <div className="headerContainer">
-            header here
+            <div className="headerTitleColumn">
+                Yelp Ice Cream Search and Reviews
+            </div>
+            <div className="headerSearchColumn">
+                Search dropdown goes here
+            </div>
         </div>
     )
 }

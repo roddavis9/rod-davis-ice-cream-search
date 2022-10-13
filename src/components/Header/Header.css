@@ -1,4 +1,21 @@
 .headerContainer {
+    display: flex;
     max-height: 50px;
     width: 100%;
 }
+
+.headerSearchColumn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30%;
+}
+
+.headerTitleColumn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    flex-grow: 1;
+}
+
