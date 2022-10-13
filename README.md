@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Rod Davis' Ice Cream Search Example
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## You MUST read readmeAddons.txt to get this project to run
 
 ## Available Scripts
 
