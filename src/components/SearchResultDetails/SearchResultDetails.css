@@ -1,0 +1,10 @@
+.authorRow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.reviewRow {
+    padding: 15px;
+}
+
+
