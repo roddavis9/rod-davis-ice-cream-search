@@ -22,7 +22,6 @@ const SearchResultDetails = (props) => {
 
             await axios.get(yelpURL, options)
                 .then((response) => {
-                    console.log('response', response);
                     setFullDetails(response.data.reviews)
                 })
                 .catch((err) => {
@@ -37,7 +36,7 @@ const SearchResultDetails = (props) => {
     return (
             <div className="detailsContainer">
                 {fullDetails.map((review) => (
-                    <>
+                    <div key={review.id}>
                         <div className="reviewRow">
                             {review.text}
                         </div>
@@ -45,7 +44,7 @@ const SearchResultDetails = (props) => {
                             {review.user.name}
                         </div>
 
-                    </>
+                    </div>
                 ))}
             </div>
     )

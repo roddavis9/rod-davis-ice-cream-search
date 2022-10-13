@@ -19,10 +19,9 @@ const SearchResultsContainer = () => {
         currentLocation,
     } = useContext(AppContext);
 
-    console.log('currentLocation', currentLocation);
+//    console.log('currentLocation', currentLocation);
 
     const handleShowDetailsClick = (businessId) => {
-        console.log('businessId', businessId);
         setShowDetails(true);
         setShowDetailsId(businessId);
     }
@@ -45,7 +44,7 @@ const SearchResultsContainer = () => {
 
             await axios.get(yelpURL, options)
                 .then((response) => {
-                    console.log('response', response.data.businesses);
+                    // console.log('response', response.data.businesses);
                     setSearchResults(response.data.businesses);
                 })
                 .catch((err) => {
