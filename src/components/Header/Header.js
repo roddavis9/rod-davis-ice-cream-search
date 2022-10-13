@@ -9,7 +9,7 @@ const Header = () => {
                 Yelp Ice Cream Search and Reviews
             </div>
             <div className="headerSearchColumn">
-                test
+                Search dropdown goes here
             </div>
         </div>
     )
