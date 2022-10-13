@@ -1,11 +1,11 @@
 import React, {useState, useEffect, useContext} from "react";
 import axios from "axios";
+import SearchResultDetails from '../SearchResultDetails/SearchResultDetails';
 import {AppContext} from '../../App';
 import Button from '@mui/material/Button';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
-import { CardActionArea } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
 import "./SearchResultsContainer.css";
@@ -77,7 +77,7 @@ const SearchResultsContainer = () => {
                                         </Typography>
                                     </CardContent>
                                     <CardActions>
-                                        <Button size="small" onClick={() => handleShowDetailsClick(business.id)}>View Full Details</Button>
+                                        <Button size="small" onClick={() => handleShowDetailsClick(business.id)}>View Reviews</Button>
                                     </CardActions>
                                 </Card>
                                 <div>&nbsp;</div>
@@ -85,9 +85,9 @@ const SearchResultsContainer = () => {
                         ))}
                     </div>
                     <div className="detailsColumn">
-                        <div className="detailsHeader">Full Business Details</div>
+                        <div className="detailsHeader">Recent Customer Reviews</div>
                         {showDetails && (
-                            <div>details component here</div>
+                            <SearchResultDetails showDetailsId={showDetailsId} />
                         )}
                     </div>
                 </div>

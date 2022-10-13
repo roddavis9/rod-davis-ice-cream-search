@@ -9,7 +9,7 @@ const Header = () => {
                 Yelp Ice Cream Search and Reviews
             </div>
             <div className="headerSearchColumn">
-                Search dropdown goes here
+                Add typeahead city search here
             </div>
         </div>
     )
