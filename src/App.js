@@ -1,24 +1,34 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import SearchResultsContainer from './components/SearchResultsContainer/SearchResultsContainer';
 import './App.css';
 
+export const AppContext = React.createContext({});
+
+
 function App() {
+  const [currentLocation, setCurrentLocation] = useState('Alpharetta');
+
+  const globals = {
+    currentLocation,
+    setCurrentLocation
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <AppContext.Provider value={globals}>
+        <div className="App">
+            <header className="App-header">
+              <Header />
+            </header>
+            <main className="main-container">
+              <SearchResultsContainer />
+            </main>
+            <footer>
+              <Footer />
+            </footer>
+        </div>
+      </AppContext.Provider>
   );
 }
 
