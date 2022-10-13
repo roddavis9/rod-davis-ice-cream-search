@@ -40,7 +40,20 @@ const SearchResultsContainer = () => {
 
     return (
         <div className="results-container">
-            search results container
+            <div className="searchSummaryBar">
+                Reviews Recommend the Following Ice Cream Shops in&nbsp;&nbsp;--&nbsp;&nbsp;{currentLocation}
+            </div>
+            <div className="resultsAndDetailsContainer">
+                <div className="resultsDetailsColumns">
+                    <div className="resultsColumn">
+                        results
+                    </div>
+                    <div className="detailsColumn">
+                        <div className="detailsHeader">Full Business Details</div>
+                        <div>details component here</div>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
