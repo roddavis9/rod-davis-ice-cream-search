@@ -15,6 +15,13 @@
     color: #00095B;
 }
 
+.fullDetailsRow {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    border: 1px solid #000;
+}
+
 .results-container {
     display: flex;
     width: auto;
@@ -24,14 +31,13 @@
     flex-grow: 1;
     align-items: stretch;
     background-color: #fff;
-    max-height: 83vh;
+    min-height: 83vh;
 }
 
 .resultsColumn {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
-    border: 1px solid red;
     width: 65%;
     padding: 10px;
 }
