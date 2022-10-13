@@ -5,7 +5,12 @@ const Header = () => {
 
     return (
         <div className="headerContainer">
-            header here
+            <div className="headerTitleColumn">
+                Yelp Ice Cream Search and Reviews
+            </div>
+            <div className="headerSearchColumn">
+                test
+            </div>
         </div>
     )
 }

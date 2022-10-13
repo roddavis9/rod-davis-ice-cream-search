@@ -8,7 +8,7 @@ export const AppContext = React.createContext({});
 
 
 function App() {
-  const [currentLocation, setCurrentLocation] = useState('Alpharetta');
+  const [currentLocation, setCurrentLocation] = useState('Alpharetta, GA');
 
   const globals = {
     currentLocation,
