@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <div className="footerContainer">
-            footer here
+            Thank You for Reviewing Rod Davis' Ice Cream Search Coding Challenge
         </div>
     )
 }
