@@ -1,0 +1,10 @@
+.footerContainer {
+    max-height: 40px;
+    background-color: #00095B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: white;
+    padding: 10px;
+}
